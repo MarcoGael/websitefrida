@@ -1,0 +1,200 @@
+:root {
+  --primary-font-color: #fff;
+  --primary-bg-color: #B57EDC;
+  --secondary-bg-color: #fff;
+  --secondary-font-color: #000;
+  --transparent: rgba(255,255,255,0);
+}
+
+body {
+  font-family: 'Cormorant Garamond700', serif;
+  font-size: 16px;
+  background: var(--primary-bg-color);
+  margin: 0;
+  padding: 0;
+  color: var(--primary-font-color);
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}  
+
+#header-desktop {
+  display: none;    
+}
+
+#header-mobile {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  background: var(--secondary-bg-color);
+  z-index: 1;
+}
+
+.cont-lg-mn {
+  display: flex;
+  width: 80%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  left: 10%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-font-color);
+}
+
+a:hover {
+  color: rgba(215, 211, 211, 0.77);
+  transition: 1s;
+}
+
+#logo-central {
+  display: flex;
+  height: 28px;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+#logo-central {
+  margin-right: auto;
+}
+
+#menu-hd {
+  cursor: pointer;
+}
+
+#header-mobile nav {
+  margin-top: 10%;
+  display: none;
+  height: 100vh;
+}
+
+.show {
+  display: block !important;
+}
+
+#header-mobile nav ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+
+#header-mobile nav ul li {
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+#presentacion {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 0;
+  letter-spacing: 25px;
+}
+
+#intro {
+  text-align: center;
+  margin: 0 20%;
+  font-size: 1.1rem;
+}
+
+.img-hd {
+  width: 100%;
+  height: 100vh;
+  background-image: url(imagenes/sofa.JPG);
+  background-size: cover;
+}
+
+
+@media screen and (min-width: 480px){
+
+  #header-mobile {
+    display: none;
+  }
+
+  #header-desktop {
+    display: inline-block;
+    width: 100%;
+    height: 94px;
+    background: var(--transparent);
+    vertical-align: top;
+    position: absolute;
+    z-index: 1;
+  }
+
+  #header-desktop a {
+    text-decoration: none;
+    color: var(--primary-font-color);
+  }
+  
+  #header-desktop a:hover {
+    color: rgba(215, 211, 211, 0.77);
+    transition: 1s;
+  }
+  
+  #contenedor-header {
+    display: flex;
+    padding-left: 4%;
+    padding-right: 4%;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 100%;
+  }
+  
+  #header-izquierda {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+  }
+  
+  #header-derecha {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+  }
+  
+  nav {
+    margin: 0 24px;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+  
+  nav ul li {
+    margin: 0 18px;
+  }
+  
+  
+}
