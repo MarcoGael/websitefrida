@@ -1,8 +1,9 @@
 :root {
-  --primary-font-color: #fff;
-  --primary-bg-color: #B57EDC;
-  --secondary-bg-color: #fff;
-  --secondary-font-color: #000;
+  --primary-font-color: #000;
+  --secondary-font-color: #fff;
+  --tertiary-font-color: rgb(88, 88, 88);
+  --primary-bg-color: #fff;
+  --secondary-bg-color: #B57EDC;
   --transparent: rgba(255,255,255,0);
 }
 
@@ -13,9 +14,10 @@ body {
   margin: 0;
   padding: 0;
   color: var(--primary-font-color);
+  max-width: 100%;
 }
 
-section {
+#inicio {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -29,7 +31,7 @@ section {
   width: 100%;
   height: auto;
   position: absolute;
-  background: var(--secondary-bg-color);
+  background: var(--primary-bg-color);
   z-index: 1;
 }
 
@@ -38,13 +40,12 @@ section {
   width: 80%;
   height: 50px;
   align-items: center;
-  justify-content: center;
-  left: 10%;
+  margin-left: 4%;
 }
 
 a {
   text-decoration: none;
-  color: var(--secondary-font-color);
+  color: var(--primary-font-color);
 }
 
 a:hover {
@@ -70,7 +71,7 @@ a:hover {
 #header-mobile nav {
   margin-top: 10%;
   display: none;
-  height: 100vh;
+  height: 90vh;
 }
 
 .show {
@@ -91,9 +92,11 @@ a:hover {
 
 #presentacion {
   width: 80%;
+  color: var(--secondary-font-color);
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 10%;
+  text-shadow: 2px 2px 1px #000;
 }
 
 h1 {
@@ -102,7 +105,7 @@ h1 {
   margin: 0;
 }
 
-h2 {
+#presentacion h2 {
   text-align: center;
   font-size: 2.8rem;
   margin: 0;
@@ -118,8 +121,69 @@ h2 {
 .img-hd {
   width: 100%;
   height: 100vh;
-  background-image: url(imagenes/sofa.JPG);
+  background-image: url(imagenes/sofa-mbl.jpg);
   background-size: cover;
+}
+
+#sobre-mi {
+  height: auto;
+}
+
+.segunda-presentacion {
+  text-align: center;
+  padding: 130px 0 60px 0;
+  font-size: 1.3rem;
+}
+
+.segunda-presentacion span {
+  color: var(--tertiary-font-color);
+  letter-spacing: 1rem;
+}
+
+.segunda-presentacion h2 {
+  font-size: 2.5rem;
+}
+
+.sect-sobre-mi {
+  width: 100%;
+}
+
+.cont-sobre-mi {
+  margin: 0 10%;
+}
+
+.card {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.img-card {
+  box-shadow: 0 0 35px 5px #dfdfdf;
+  color: #1c110908;
+}
+
+.img-card img {
+  display: block;
+  width: 100%;
+}
+
+.img-card:hover {
+  transform: translateY(0);
+  transition: box-shadow .4s ease,transform .6s ease;
+}
+
+.cont-sobre-mi span {
+  display: block;
+  margin-top: 30px;
+}
+
+.cont-sobre-mi h3 {
+  display: block;
+  margin: 6% 0 0 0;
+}
+
+.text-card {
+  text-align: center;
 }
 
 
@@ -141,7 +205,8 @@ h2 {
 
   #header-desktop a {
     text-decoration: none;
-    color: var(--primary-font-color);
+    color: var(--secondary-font-color);
+    text-shadow: 2px 2px 1px #000;
   }
   
   #header-desktop a:hover {
@@ -195,6 +260,16 @@ h2 {
   nav ul li {
     margin: 0 18px;
   }
-  
-  
+
+  #presentacion {
+    width: 60%;
+    left: 20%;
+  }
+
+  .img-hd {
+    width: 100%;
+    height: 100vh;
+    background-image: url(imagenes/sofa-dsk.jpg);
+    background-size: cover;
+  }
 }
