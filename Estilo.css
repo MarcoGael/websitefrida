@@ -4,6 +4,7 @@
   --tertiary-font-color: rgb(88, 88, 88);
   --primary-bg-color: #fff;
   --secondary-bg-color: #B57EDC;
+  --tertiary-bg-color: #aa32ff;
   --transparent: rgba(255,255,255,0);
 }
 
@@ -14,7 +15,6 @@ body {
   margin: 0;
   padding: 0;
   color: var(--primary-font-color);
-  max-width: 100%;
 }
 
 #inicio {
@@ -125,10 +125,6 @@ h1 {
   background-size: cover;
 }
 
-#sobre-mi {
-  height: auto;
-}
-
 .segunda-presentacion {
   text-align: center;
   padding: 130px 0 60px 0;
@@ -144,12 +140,53 @@ h1 {
   font-size: 2.5rem;
 }
 
-.sect-sobre-mi {
-  width: 100%;
+#sobre-mi p {
+  font-size: 1.3rem;
+  text-align: left;
+  margin-left: 8%;
+  letter-spacing: 7px;
+  margin-bottom: 20%;
 }
 
-.cont-sobre-mi {
+#sobre-mi p:nth-child(2) {
+  text-align: right;
+  margin-right: 8%;
+}
+
+#sobre-mi b {
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+
+#sobre-mi a:hover {
+  color: var(--secondary-font-color);
+}
+
+#sobre-mi b:hover {
+  font-size: 2rem;
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-font-color);
+  box-shadow: 8px 8px 1px #f7e9ff;
+  padding: 1% 5% 1% 5%;
+}
+
+#Glamour-Belleza b:hover:first-of-type {
+  background-color: var(--tertiary-bg-color);
+}
+
+.sect-uñas {
+  width: 100%;
+  padding-top: 10%;
+}
+
+.cont-uñas {
   margin: 0 10%;
+}
+
+.pres-uñas h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 15%;
 }
 
 .card {
@@ -159,31 +196,61 @@ h1 {
 
 .img-card {
   box-shadow: 0 0 35px 5px #dfdfdf;
-  color: #1c110908;
+  transition: all 0.6s ease;
+  position: relative;
 }
+
+.borde-interno::before {
+  content: "";
+  border: 5px solid var(--primary-bg-color);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  opacity: 1;
+}
+
+.borde-interno:hover:before {
+  transition: all 0.5s ease;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.img-card:hover {
+  transform: translateY(-2px);
+  box-shadow: none;
+}
+
 
 .img-card img {
   display: block;
   width: 100%;
+  cursor: pointer;
+  
 }
 
-.img-card:hover {
-  transform: translateY(0);
-  transition: box-shadow .4s ease,transform .6s ease;
-}
-
-.cont-sobre-mi span {
+.cont-uñas span {
   display: block;
   margin-top: 30px;
 }
 
-.cont-sobre-mi h3 {
+.cont-uñas h3 {
   display: block;
   margin: 6% 0 0 0;
 }
 
 .text-card {
   text-align: center;
+}
+
+.img-fondo {
+  width: 100%;
+  height: 80vh;
+  background-image: url(imagenes/galaxia1.png);
+  background-size: cover;
 }
 
 
@@ -272,4 +339,7 @@ h1 {
     background-image: url(imagenes/sofa-dsk.jpg);
     background-size: cover;
   }
+
+
+
 }
