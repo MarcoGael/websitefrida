@@ -1,7 +1,8 @@
 :root {
   --primary-font-color: #000;
   --secondary-font-color: #fff;
-  --tertiary-font-color: rgb(88, 88, 88);
+  --tertiary-font-color: #585858;
+  --quaternary-font-color: #9d9d9d;
   --primary-bg-color: #fff;
   --secondary-bg-color: #B57EDC;
   --tertiary-bg-color: #aa32ff;
@@ -170,8 +171,8 @@ h1 {
   padding: 1% 5% 1% 5%;
 }
 
-#Glamour-Belleza b:hover:first-of-type {
-  background-color: var(--tertiary-bg-color);
+#Glamour-Belleza {
+  text-shadow: 1px 1px 4px #aa32ff;
 }
 
 .sect-uñas {
@@ -224,26 +225,40 @@ h1 {
   box-shadow: none;
 }
 
-
 .img-card img {
   display: block;
   width: 100%;
   cursor: pointer;
-  
 }
 
-.cont-uñas span {
-  display: block;
-  margin-top: 30px;
+.descrip-nail {
+  text-align: center;
+  color: var(--secondary-font-color);
+  font-size: 1.4rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(60deg,#B57EDC, #f319ff, #aa32ff, #6831ff);
+  opacity: 0;
+  transition: all 0.6s ease;
 }
 
-.cont-uñas h3 {
-  display: block;
-  margin: 6% 0 0 0;
+.descrip-nail p {
+  margin-top: 33%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.descrip-nail:hover {
+  transition-delay: 0.4s;
+  opacity: 1;
 }
 
 .text-card {
   text-align: center;
+  font-size: 1.4rem;
+  color: var(--quaternary-font-color);
 }
 
 .img-fondo {
@@ -340,6 +355,16 @@ h1 {
     background-size: cover;
   }
 
+  #sobre-mi br {
+    display: none;
+  }
 
+  #sobre-mi p {
+    margin-bottom: 5%;
+    width: 60%;
+    right: auto;
+  }
+  
 
+  
 }
