@@ -51,7 +51,7 @@ a {
 
 a:hover {
   color: rgba(215, 211, 211, 0.77);
-  transition: 1s;
+  transition: all 0.5 ease;
 }
 
 #logo-central {
@@ -177,22 +177,22 @@ h1 {
 
 .sect-uñas {
   width: 100%;
-  padding-top: 10%;
 }
 
 .cont-uñas {
   margin: 0 10%;
 }
 
-.pres-uñas h3 {
+.pres-uñas {
   text-align: center;
   font-size: 2.5rem;
   padding-bottom: 15%;
+  padding-top: 10%;
 }
 
 .card {
   width: 100%;
-  padding-bottom: 50px;
+  
 }
 
 .img-card {
@@ -231,6 +231,10 @@ h1 {
   cursor: pointer;
 }
 
+.img-card:hover > img {
+  transform: scale(1.5);
+}
+
 .descrip-nail {
   text-align: center;
   color: var(--secondary-font-color);
@@ -245,19 +249,20 @@ h1 {
 }
 
 .descrip-nail p {
-  margin-top: 33%;
+  margin-top: 30%;
   margin-right: 10%;
   margin-left: 10%;
+  cursor: pointer;
 }
 
 .descrip-nail:hover {
-  transition-delay: 0.4s;
+  transition-delay: 0.2s;
   opacity: 1;
 }
 
 .text-card {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: var(--quaternary-font-color);
 }
 
@@ -341,6 +346,23 @@ h1 {
   
   nav ul li {
     margin: 0 18px;
+    position: relative;
+  }
+
+  nav ul li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-bg-color);
+    position: absolute;
+    bottom: -3px;
+    right: 50%;
+    transition: all 0.4s ease;
+  }
+
+  nav ul li:hover:after {
+    width: 100%;
+    right: 0;
   }
 
   #presentacion {
@@ -355,16 +377,37 @@ h1 {
     background-size: cover;
   }
 
-  #sobre-mi br {
+  #sobre-mi p {
+    margin-bottom: 5%;
+  }
+
+  #sobre-mi p br:nth-of-type(2n) {
     display: none;
   }
 
-  #sobre-mi p {
-    margin-bottom: 5%;
-    width: 60%;
-    right: auto;
+  .cont-uñas {
+    margin: 0 6%;
+    display: flex;
   }
-  
 
-  
+  .pres-uñas {
+    padding: 5% 0 8% 0;
+    margin: 0;
+  }
+
+  .card {
+    width: 50%;
+  }
+
+  .img-card {
+    width: 75%;
+    display: flex;
+    margin-left: 12.5%;
+  }
+
+  .descrip-nail p {
+    margin-top: 38%;
+    font-size: 1.6rem;
+  }
+
 }
