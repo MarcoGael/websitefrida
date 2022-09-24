@@ -3,6 +3,7 @@
   --secondary-font-color: #fff;
   --tertiary-font-color: #585858;
   --quaternary-font-color: #9d9d9d;
+  --quinary-font-color: #F4F0ED;
   --primary-bg-color: #fff;
   --secondary-bg-color: #B57EDC;
   --tertiary-bg-color: #aa32ff;
@@ -124,15 +125,18 @@ h1 {
   height: 100vh;
   background-image: url(imagenes/sofa-mbl.jpg);
   background-size: cover;
-  background-position: 0;
+}
+
+#II-presentacion {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .segunda-presentacion {
   text-align: center;
-  align-items: center;
-  padding: 130px 0 60px 0;
   font-size: 1.3rem;
-  height: 50vh;
 }
 
 .segunda-presentacion span {
@@ -144,22 +148,51 @@ h1 {
   font-size: 2.5rem;
 }
 
-#sobre-mi p {
-  font-size: 1.3rem;
-  text-align: left;
-  margin-left: 8%;
-  letter-spacing: 7px;
-  margin-bottom: 20%;
+#sobre-mi div {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#sobre-mi p:nth-child(2) {
-  text-align: right;
-  margin-right: 8%;
+.parallax {
+  background: #fff fixed no-repeat 50% 50%;
+  background-size: cover;
+}
+
+#parallax1 {
+  background-image: url(imagenes/fondo-marmol5.jpg);
+}
+
+#parallax2 {
+  background-image: url(imagenes/fondo-marmol2.jpg);
+}
+
+#parallax3 {
+  background-image: url(imagenes/fondo-marmol3.jpg);
+}
+
+#sobre-mi p {
+  font-size: 1.6rem;
+  justify-content: center;
+  text-align: justify;
+  margin-left: 8%;
+  letter-spacing: 7px;
+  color: var(--secondary-font-color);
+  padding: 0;
+  margin: 0;
 }
 
 #sobre-mi b {
   transition: all 0.6s ease;
   cursor: pointer;
+}
+
+#sobre-mi a {
+  color: var(--secondary-font-color);
 }
 
 #sobre-mi a:hover {
@@ -171,7 +204,6 @@ h1 {
   background-color: var(--secondary-bg-color);
   color: var(--secondary-font-color);
   box-shadow: 8px 8px 1px #f7e9ff;
-  padding: 1% 5% 1% 5%;
 }
 
 #Glamour-Belleza {
@@ -186,7 +218,7 @@ h1 {
   margin: 0 10%;
 }
 
-.pres-uñas {
+.subtitulo {
   text-align: center;
   font-size: 2.5rem;
   padding-bottom: 15%;
@@ -234,12 +266,8 @@ h1 {
   cursor: pointer;
 }
 
-.img-card:hover > img {
-  transform: scale(1.5);
-}
-
 .descrip-nail {
-  text-align: center;
+  text-align: justify;
   color: var(--secondary-font-color);
   font-size: 1.4rem;
   position: absolute;
@@ -271,11 +299,172 @@ h1 {
   color: var(--quaternary-font-color);
 }
 
+#pestanas {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.c3, .c7 {
+  display: none;
+}
+
+.subtitulo {
+  grid-column: span 2;
+}
+
+.cont-grid {
+  transition: all 0.6s ease;
+  position: relative;
+}
+
+.cont-grid img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  
+}
+
+#centro {
+  grid-column: span 2;
+  color: var(--secondary-font-color);
+  font-size: 1rem;
+  text-shadow: 1px 1px 3px var(--secondary-bg-color);
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#centro p {
+  width: 80%;
+  position: absolute;
+}
+
+.cont-grid:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
 .img-fondo {
   width: 100%;
-  height: 80vh;
-  background-image: url(imagenes/galaxia1.png);
+  height: 100vh;
+  background-image: url(imagenes/fondo-marmol6.jpg);
   background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.img-fondo p {
+  display: flex;
+  position: absolute;
+  color: var(--secondary-font-color);
+  font-size: 160px;
+  width: auto;
+  white-space: nowrap;
+  animation: desplazamiento 35s infinite;
+}
+
+@keyframes desplazamiento {
+  0% {
+    transform: translateX(70%);
+  }
+
+  100% {
+    transform: translateX(-65%);
+  }
+}
+
+#trabajos {
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  width: 400%;
+  height: 600px;
+  margin-left: -100%;
+}
+
+.slider-section {
+  width: 100%;
+}
+
+.img-slider {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-slider {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: var(--primary-bg-color);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn-slider-right {
+  right: 10px;
+}
+
+.btn-slider-left {
+  left: 10px;
+}
+
+#contacto {
+  padding-top: 10%;
+}
+
+.com-grid {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-left: 5%;
+  text-align: center  ;
+}
+
+.com-area {
+  display: flex;
+  flex-direction:column;
+  font-size: 1.7rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  color: var(--quaternary-font-color);
+  text-shadow: 1px 1px 1px var(--secondary-bg-color);
+}
+
+.com-area img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 /*VERSIÓN IPAD - TABLETAS*/
@@ -311,7 +500,7 @@ h1 {
   
   .img-hd {
     background-image: url(imagenes/sofa-mbl.jpg);
-    background-position: 0;
+    background-size: cover;
   }
   
   #sobre-mi p {
@@ -344,6 +533,10 @@ h1 {
     width: 90%;
     display: flex;
     margin-left: 5%;
+  }
+
+  .com-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
 }
@@ -404,7 +597,7 @@ h1 {
   }
   
   nav {
-    margin: 0 24px;
+    margin: 0 0 0 24px;
     height: 100%;
     box-sizing: border-box;
   }
@@ -451,6 +644,28 @@ h1 {
     height: 100vh;
     background-image: url(imagenes/sofa-dsk.jpg);
     background-size: cover;
+  }
+
+  #pestanas {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto 300px auto;
+  }
+
+  .c3, .c7 {
+    display: block;
+  }
+
+  .subtitulo {
+    grid-column: span 3;
+  }
+
+  #centro {
+    grid-column: span 3;
+    font-size: 1.6rem;
+  }
+
+  #centro p {
+    width: 60%;
   }
 
 }

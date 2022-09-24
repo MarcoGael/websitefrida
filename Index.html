@@ -20,11 +20,11 @@
       <nav id="menu-mobile">
         <ul>
           <li><a href="#inicio">INICIO</a></li>
-          <li><a href="#2da-presentacion">SOBRE MÍ</a></li>
+          <li><a href="#II-presentacion">SOBRE MÍ</a></li>
           <li><a href="#uñas">UÑAS</a></li>
-          <li><a href="#">PESTAÑAS</a></li>
-          <li><a href="#">TRABAJOS</a></li>
-          <li><a href="#">CONTACTO</a></li>
+          <li><a href="#pestanas">PESTAÑAS</a></li>
+          <li><a href="#trabajos">TRABAJOS</a></li>
+          <li><a href="#contacto">CONTACTO</a></li>
         </ul>
       </nav>
     </header>
@@ -35,9 +35,9 @@
           <nav>
             <ul>
               <li><a href="#inicio">INICIO</a></li>
-              <li><a href="#2da-presentacion">SOBRE MÍ</a></li>
+              <li><a href="#II-presentacion">SOBRE MÍ</a></li>
               <li><a href="#uñas">UÑAS</a></li>
-              <li><a href="#">PESTAÑAS</a></li>        
+              <li><a href="#pestanas">PESTAÑAS</a></li>        
             </ul>
           </nav>
         </div>
@@ -45,8 +45,8 @@
         <div id="header-derecha">
           <nav>
             <ul>
-              <li><a href="#">TRABAJOS</a></li>
-              <li><a href="#">CONTACTO</a></li>
+              <li><a href="#trabajos">TRABAJOS</a></li>
+              <li><a href="#contacto">CONTACTO</a></li>
             </ul>
           </nav>
         </div>
@@ -70,7 +70,7 @@
     <div class="img-hd"></div>
   </section>
 
-  <section id="2da-presentacion">
+  <section id="II-presentacion">
     <div class="segunda-presentacion">
       <span>BIENVENIDA</span>
       <h2>FRIDA <br> PARA SERVIRTE</h2>
@@ -80,7 +80,7 @@
   <!--AÑADIR IMAGENES CON PARALLAX-->
 
   <section id="sobre-mi">
-    <div>
+    <div class="parallax" id="parallax1">
       <p>
         Tengo 19 años<br>
         y estoy<br>
@@ -92,7 +92,9 @@
         de buena <b>calidad</b><br>
         y <b>profesional</b>.
       </p>
+    </div>
 
+    <div class="parallax" id="parallax2">
       <p>
         Soy una persona<br>
         <b>honesta</b><br>
@@ -104,12 +106,14 @@
         que hago mi trabajo<br>
         con <b>excelencia</b>.
       </p>
+    </div>
 
+    <div class="parallax" id="parallax3">
       <p>
         Además del estudio<br>
         trabajo en<br>
         el salón<br>
-        <b><a href="https://www.facebook.com/salonglamourybelleza/" target="_blank" id="Glamour-Belleza">"Glamour y belleza"</a></b><br>
+        <b><a href="https://www.facebook.com/salonglamourybelleza/" target="_blank" id="Glamour-Belleza">Glamour y belleza</a></b><br>
         de la mano<br>
         de<br>
         <b>Fabiola Martinez</b><br>
@@ -119,13 +123,12 @@
         tema o<br>
         sobre alguna duda<br>
         que tenga.
-
       </p>
-    </div>
+    </div>  
   </section>
 <!--Cambiar las imagenes a su sección correspondiende (cuando tome las fotos, xd)-->
   <section id="uñas">
-    <h3 class="pres-uñas">
+    <h3 class="subtitulo">
       NAIL ZONE
     </h3>
   </section>
@@ -151,7 +154,7 @@
       <div class="card">
         <div class="img-card">
           <div class="borde-interno">
-            <img src="imagenes/cuadradas/uñas-diagonal-4.jpg">
+            <img src="imagenes/cuadradas/uñasdeGelSemi4.jpg">
             <div class="descrip-nail">
               <p>
                 Aplicación de gel semipermanente; brinda brillo, firmeza y dureza a la uña; puede tener el color deseado e incluir diseño.
@@ -160,7 +163,7 @@
           </div>
         </div>
           <h3 class="text-card">
-            GEL SEMIPERMANENTE
+            GEL SEMI PERMANENTE
           </h3>
       </div>
     </div>
@@ -202,8 +205,81 @@
     </div>
   </section>
 
+  <section id="pestanas">
+    <div class="subtitulo">
+      <h3>PESTAÑAS</h3>
+    </div>
+    <div class="cont-grid">
+      <img src="imagenes/cuadradas/aplicacion-pestañas4.jpg" alt="">
+    </div>
+    <div class="cont-grid">
+      <img src="imagenes/cuadradas/pestañas-limpieza-4.jpg" alt="">
+    </div>
+    <div class="cont-grid c3">
+      <img src="imagenes/cuadradas/pestañas4.jpg" alt="">
+    </div>
+    <div id="centro" class="cont-grid">
+      <img src="imagenes/fondo-marmol.jpg" alt="">
+      <p>
+        Aplicación de extensiones de pestañas 1D sobre cada una de las pestañas naturales, para dar el tan deseado EFECTO RÍMEL.
+        <br>
+        Hay diferentes diámetros disponibles, para poder crear efectos más discretos o más marcados, según prefieras tú.
+      </p>
+    </div>
+    <div class="cont-grid">
+      <img src="imagenes/cuadradas/segunda-aplicacion4.jpg" alt="">
+    </div>
+    <div class="cont-grid">
+      <img src="imagenes/cuadradas/puesta-pestañas4.jpg" alt="">
+    </div>
+    <div class="cont-grid c7">
+      <img src="imagenes/cuadradas/smile-4.jpg" alt="">
+    </div>
+  </section>
+
   <section>
-    <div class="img-fondo"></div>
+    <div class="img-fondo">
+      <p>
+        Toda tú eres bella, amada mía; no hay en ti defecto alguno. Cantares 4:7
+      </p>
+    </div>
+  </section>
+
+  <section id="trabajos">
+    <div class="slider" id="slider">
+      <div class="slider-section">
+        <img src="imagenes/PROXIMAMETE.jpg" alt="" class="img-slider">
+      </div>
+      <div class="slider-section">
+        <img src="imagenes/PROXIMAMETE2.jpg" alt="" class="img-slider">
+      </div>
+      <div class="slider-section">
+        <img src="imagenes/fondo-marmol2.jpg" alt="" class="img-slider">
+      </div>
+      <div class="slider-section">
+        <img src="imagenes/fondo-marmol3.jpg" alt="" class="img-slider">
+      </div>
+      <div class="btn-slider btn-slider-right" id="btn-right">&#62</div>
+      <div class="btn-slider btn-slider-left" id="btn-left">&#60</div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h3 class="subtitulo">COMUNÍCATE CONMIGO!</h3>
+    <div class="com-grid">
+      <div class="com-area">
+        <img src="imagenes/telefono.png" alt="">
+        Teléfono <br> 999 419 6436
+      </div>
+      <div class="com-area">
+        <img src="imagenes/correo.png" alt="">
+        Correo <br> frifer.tc@gmail.com
+      </div>
+      <div class="com-area">
+        <img src="imagenes/redes.png" alt="">
+        Instagram <br> @fridatechi
+      </div>
+    </div>
   </section>
 
   <!--AÑADIR FOOTER-->
