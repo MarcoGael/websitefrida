@@ -8,6 +8,7 @@ menuHD.addEventListener('click', function(event){
 })
 
 const slider = document.querySelector("#slider");
+console.log('slider', slider)
 let sliderSection = document.querySelectorAll(".slider-section");
 let sliderSectionLast = sliderSection[sliderSection.length - 1];
 
